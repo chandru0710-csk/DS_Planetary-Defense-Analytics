@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/Chandrasekar A/Documents/Kiro/Planetary Defense Analytics/mlruns/2/models/m-17191e2d753c4b20a54208855d459967/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.18.0
+model_id: m-17191e2d753c4b20a54208855d459967
+model_size_bytes: 1117
+model_uuid: m-17191e2d753c4b20a54208855d459967
+prompts: null
+run_id: 7921116ac4df4b3fa4593faa60c80831
+utc_time_created: '2026-11-20 12:21:08.449036'

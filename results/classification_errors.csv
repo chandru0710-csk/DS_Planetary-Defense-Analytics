@@ -1,0 +1,10 @@
+Run,PHA caught (TP),PHA missed (FN),False alarms (FP)
+Logistic Regression | None,38,375,118
+Random Forest | None,134,279,57
+XGBoost | None,136,277,86
+Logistic Regression | class_weight,412,1,3050
+Random Forest | class_weight,398,15,829
+XGBoost | class_weight,376,37,934
+Logistic Regression | SMOTE,410,3,2918
+Random Forest | SMOTE,396,17,843
+XGBoost | SMOTE,396,17,725
