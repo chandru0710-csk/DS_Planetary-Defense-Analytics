@@ -1,0 +1,17 @@
+# Large data files (keep them out of GitHub, limit is 100 MB per file)
+pha_dataset.csv
+cleaned_data.csv
+classification.csv
+regression.csv
+clustering.csv
+
+# MLflow model artifacts (230 MB). mlflow.db with params and metrics is kept.
+mlruns/
+
+# Helper files
+_build/
+_inspect*
+_pip_log.txt
+__pycache__/
+.ipynb_checkpoints/
+Sample Project/
