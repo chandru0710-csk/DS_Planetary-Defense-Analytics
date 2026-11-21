@@ -5,13 +5,18 @@ import joblib
 import shap
 import matplotlib.pyplot as plt
 
+import os
+
+# Folder of the saved models (next to this app.py file)
+MODELS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'models')
+
 # Load saved models
-pha_model = joblib.load('models/pha_model.pkl')
-diameter_model = joblib.load('models/diameter_model.pkl')
-kmeans = joblib.load('models/kmeans_model.pkl')
-cluster_scaler = joblib.load('models/cluster_scaler.pkl')
-cluster_names = joblib.load('models/cluster_names.pkl')
-cluster_sample = pd.read_csv('models/cluster_sample.csv')
+pha_model = joblib.load(os.path.join(MODELS, 'pha_model.pkl'))
+diameter_model = joblib.load(os.path.join(MODELS, 'diameter_model.pkl'))
+kmeans = joblib.load(os.path.join(MODELS, 'kmeans_model.pkl'))
+cluster_scaler = joblib.load(os.path.join(MODELS, 'cluster_scaler.pkl'))
+cluster_names = joblib.load(os.path.join(MODELS, 'cluster_names.pkl'))
+cluster_sample = pd.read_csv(os.path.join(MODELS, 'cluster_sample.csv'))
 
 # Test RMSE of the diameter model on log(diameter), from 4.Regression.ipynb
 DIAMETER_RMSE = 0.1058
